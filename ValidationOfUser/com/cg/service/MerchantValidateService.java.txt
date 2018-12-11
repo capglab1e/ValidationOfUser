@@ -1,0 +1,13 @@
+package com.cg.service;
+
+import java.util.List;
+
+import com.cg.exception.MerchantNotFoundException;
+import com.cg.model.Merchant;
+
+public interface MerchantValidateService {
+
+	public Merchant merchantValidation(Merchant merchant);
+	public List<Merchant> getMerchantDetails() throws MerchantNotFoundException;
+}
+
